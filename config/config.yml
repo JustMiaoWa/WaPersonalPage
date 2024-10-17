@@ -4,7 +4,15 @@ header:
 
 info:
   title: 'Hello'
-  
+  introduce:
+    sayHello: '你好，很高兴认识你👋'
+    sayName: '我叫 张川南'
+    sayRole: '是一名后端开发者、前端爱好者、'
+    typeWriter: 
+      - '正在学习独立开发'
+      - '正在学习UI设计'
+      - '正在学习视频剪辑'
+
 
 
 

@@ -1,9 +1,21 @@
 .container-box {
     max-width: 1128px;
-    padding: 0 22px;
+    padding-left: 22px;
+    padding-right: 22px;
     margin: 0 auto;
     overflow: hidden;
 }
+
+.gundon-b-border {
+    background: linear-gradient(to right , #ffffff, @theme-color) no-repeat;
+    background-size: 0 2px;
+    background-position: left bottom;
+    transition: background-size .3s;
+}
+.gundon-b-border:hover {
+    background-size: 100% 2px;
+}
+
 
 .font-color {
     color: @font-color;
@@ -27,6 +39,7 @@
 
 body {
     background-color: @body-bg-color;
+    // cursor: none; /* 隐藏默认的鼠标指针 */
 }
 
 *::-webkit-scrollbar {

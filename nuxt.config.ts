@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     }
   },
   modules: ['@nuxtjs/style-resources', '@nuxtjs/tailwindcss', '@nuxt/content'],
-  css: ['@/public/css/fonts.css','@/assets/css/global.less'],
+  css: ['@/public/css/fonts.css','@/assets/css/global.less','@/assets/css/animate.less'],
   compatibilityDate: '2024-04-03',
   devtools: { enabled: false },
   ssr: true,
