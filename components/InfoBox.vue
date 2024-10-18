@@ -40,11 +40,17 @@
                             <div class="skills-style-group">
                                 <div class="tags-group-all">
                                     <div class="first-group">
-                                        <div class="flex justify-center items-center bg-[#e9572b] rounded-[24px] w-[100px] h-[100px]">
+                                        <div class="flex justify-center items-center bg-[#2f7aff] rounded-[24px] w-[100px] h-[100px]">
                                             <img src="http://image.wazicode.top/blog/202307012251124.png" class="w-3/5 h-3/5"/>
                                         </div>
                                         <div class="flex justify-center items-center bg-[#e9572b] rounded-[24px] w-[100px] h-[100px]">
                                             <img src="/img/CSS3.png" class="w-3/5 h-3/5"/>
+                                        </div>
+                                        <div class="flex justify-center items-center bg-[#f0c655] rounded-[24px] w-[100px] h-[100px]">
+                                            <img src="/img/JS.png" class="w-3/5 h-3/5"/>
+                                        </div>
+                                        <div class="flex justify-center items-center bg-[#df5b40] rounded-[24px] w-[100px] h-[100px]">
+                                            <img src="/img/git.png" class="w-3/5 h-3/5"/>
                                         </div>
                                     </div>
                                     <div class="second-group">
@@ -54,6 +60,12 @@
                                         <div class="flex justify-center items-center bg-[#57b6e6] rounded-[24px] w-[100px] h-[100px]">
                                             <img src="/img/docker.png" class="w-3/5 h-3/5"/>
                                         </div>
+                                        <div class="flex justify-center items-center bg-[#2c51db] rounded-[24px] w-[100px] h-[100px]">
+                                            <img src="/img/HTML.png" class="w-3/5 h-3/5"/>
+                                        </div>
+                                        <div class="flex justify-center items-center bg-[#ffffff] rounded-[24px] w-[100px] h-[100px]">
+                                            <img src="http://image.wazicode.top/blog/202306192300927.png" class="w-3/5 h-3/5"/>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="skills-list">
@@ -62,6 +74,49 @@
                                             <img src="http://image.wazicode.top/blog/202307012251124.png" title="Java">
                                         </div>
                                         <div class="skill-name"> <span>Java</span></div>
+                                    </div>
+
+                                    <div class="skill-info">
+                                        <div class="skill-icon" style="background:#ffffff">
+                                            <img src="/img/Python.png" title="Python">
+                                        </div>
+                                        <div class="skill-name"> <span>Python</span></div>
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-icon" style="background:#57b6e6">
+                                            <img src="/img/docker.png" title="docker">
+                                        </div>
+                                        <div class="skill-name"> <span>docker</span></div>
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-icon" style="background:#2c51db">
+                                            <img src="/img/HTML.png" title="HTML">
+                                        </div>
+                                        <div class="skill-name"> <span>HTML</span></div>
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-icon" style="background:#e9572b">
+                                            <img src="/img/CSS3.png" title="CSS3">
+                                        </div>
+                                        <div class="skill-name"> <span>CSS3</span></div>
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-icon" style="background:#f0c655">
+                                            <img src="/img/JS.png" title="JS">
+                                        </div>
+                                        <div class="skill-name"> <span>JS</span></div>
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-icon" style="background:#df5b40">
+                                            <img src="/img/git.png" title="git">
+                                        </div>
+                                        <div class="skill-name"> <span>git</span></div>
+                                    </div>
+                                    <div class="skill-info">
+                                        <div class="skill-icon" style="background:#ffffff">
+                                            <img src="http://image.wazicode.top/blog/202306192300927.png" title="Linux">
+                                        </div>
+                                        <div class="skill-name"> <span>Linux</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -87,8 +142,12 @@
                     </div>
                 </div>
             </div>
-            <div class="swiper-box h-[373px] bg-[#F95454] w-[317px] rounded-[16px] flex-none">
-                
+            <div class="swiper-box h-[373px] w-[317px] rounded-[16px] flex flex-col justify-center items-center gap-[30px]
+            ">
+                <div class="w-[160px] h-[160px] rounded-full bg-[#ffffff] overflow-hidden flex justify-center items-start">
+                    <img src="/img/imgLogo.svg" class="w-full h-full"/>
+                </div>
+                <div class="text-[16px] text-[#ffffff]">有独立开发项目、运维上线项目经验</div>
             </div>
         </div>
 
@@ -156,6 +215,9 @@ onMounted(() => {
 
 </script>
 <style lang="less" scoped>
+.swiper-box {
+    background: linear-gradient(45deg,#EE82EE 0%,#00D1FF 100%); 
+}
 
 .skills-container:hover .skills-style-group .tags-group-all{
     opacity: 0;
@@ -177,7 +239,7 @@ onMounted(() => {
             display: flex;
             flex-direction: row;
             gap: 15px;
-            animation: rowup 10s linear infinite;
+            animation: rowup 15s linear infinite;
             right: 20px;
             .first-group {
                 display: flex;
@@ -201,6 +263,10 @@ onMounted(() => {
             position: absolute;
             transition: 0.3s;
             opacity: 0;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100px;
+            overflow: auto;
             .skill-info {
                 display: flex;
                 align-items: center;
@@ -236,7 +302,7 @@ onMounted(() => {
   }
 
   to {
-    transform: translateY(-50%);
+    transform: translateY(-100%);
   }
 }
 

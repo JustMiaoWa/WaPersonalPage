@@ -7,8 +7,8 @@
                 <div class="flex flex-col gap-[18px]">
                     <span class="bg-font-color">媒体账号</span>
                     <span class="gundon-b-border"><a href="https://blog.wazicode.top" target="_blank">博客：blog.wazicode.top</a></span>
-                    <span class="gundon-b-border">文档：doc.wazicode.top</span>
-                    <span class="gundon-b-border">掘金：juejin.cn/waz</span>
+                    <span class="gundon-b-border"><a href="https://doc.wazicode.top" target="_blank">文档：doc.wazicode.top</a></span>
+                    <span class="gundon-b-border"><a href="https://juejin.cn/user/1884997357418663" target="_blank">掘金：juejin.cn/waz</a></span>
                 </div>
                 <div class="flex flex-col gap-[18px]">
                     <span class="bg-font-color">官方邮箱</span>
@@ -48,8 +48,8 @@
          bg-sub-font-color
          max-md:flex-col">
             <span class="gundon-b-border">CopyRight@2024  哇子 </span>
-            <span class="gundon-b-border">蜀ICP备2023022177号</span>
-            <span class="gundon-b-border">本项目开源：github / gitee</span>
+            <span class="gundon-b-border"><a target="_blank" href="https://beian.miit.gov.cn/">蜀ICP备2023022177号-1</a></span>
+            <!-- <span class="gundon-b-border">本项目开源：github / gitee</span> -->
         </div>
     </div>
 </template>

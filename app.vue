@@ -1,16 +1,37 @@
 <template>
   <div>
-    <div class="cursor" ref="cursor">
+    <div class="cursor max-md:none" ref="cursor">
       <div class="cursor-dot"></div>
     </div>
     <Header></Header>
     <InfoBox></InfoBox>
-    <ProBox></ProBox>
+    <ProBox @update:contentUrl="changeUrl"
+    @update:proitemVisible="proitemVisible = $event"></ProBox>
     <Footer></Footer>
-    <ProInfoItem :proitemVisible="false"></ProInfoItem>
+    <ProInfoItem :proitemVisible="proitemVisible" :contentUrl="contentUrl"
+    @update:proitemVisible="proitemVisible = $event"></ProInfoItem>
   </div>
 </template>
 <script setup>
+let proitemVisible = ref(false);
+let contentUrl = ref("")
+
+const changeUrl = (url) => {
+  contentUrl.value = url
+  console.log(contentUrl.value)
+}
+
+// 监听 proitemVisible 的变化
+watch(proitemVisible, (newVal) => {
+  if (newVal) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+});
+
+
+// 鼠标样式
 const mouseX = ref(0);
 const mouseY = ref(0);
 let cursorX = 0, cursorY = 0;

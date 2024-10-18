@@ -11,12 +11,14 @@
   },
   "dependencies": {
     "@nuxt/content": "^2.13.2",
+    "aos": "^2.3.4",
     "nuxt": "3.13.1",
     "vue": "latest"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^2.0.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
+    "@tailwindcss/typography": "^0.5.15",
     "less": "^4.2.0",
     "less-loader": "^12.2.0"
   }
